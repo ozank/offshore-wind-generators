@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Sectioned Essay
+% LaTeX Template
+% Version 1.0 (3/8/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original Author:
+% Nicolas Diaz (nsdiaz@uc.cl) with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, 11pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
+
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{graphicx} % Required for including pictures
+\usepackage{graphicx}
+%\usepackage[font=small]{subfig}
+\graphicspath{{images/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\usepackage{wrapfig} % Allows in-line images
+
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Required for accented characters
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\LARGE\@title} % Increase the font size of the title
+
+\vspace{50pt} % Some vertical space between the title and author name
+
+{\large\@author} % Author name
+\\\@date % Date
+
+\vspace{40pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{Electrical Generator Technologies for Offshore Wind}} % Subtitle
+
+\author{\textsc{Ozan Keysan} % Author
+\\{\textit{Institute for Energy  Systems\\ University of Edinburgh}}} % Institution
+
+\date{\today} % Date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title section
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT AND KEYWORDS
+%----------------------------------------------------------------------------------------
+
+%\renewcommand{\abstractname}{Summary} % Uncomment to change the name of the abstract to something else
+
+\begin{abstract}
+Morbi tempor congue porta. Proin semper, leo vitae faucibus dictum, metus mauris lacinia lorem, ac congue leo felis eu turpis. Sed nec nunc pellentesque, gravida eros at, porttitor ipsum. Praesent consequat urna a lacus lobortis ultrices eget ac metus. In tempus hendrerit rhoncus. Mauris dignissim turpis id sollicitudin lacinia. Praesent libero tellus, fringilla nec ullamcorper at, ultrices id nulla. Phasellus placerat a tellus a malesuada.
+\end{abstract}
+
+\hspace*{3,6mm}\textit{Keywords:} lorem , ipsum , dolor , sit amet , lectus % Keywords
+
+\vspace{30pt} % Some vertical space between the abstract and first section
+
+%----------------------------------------------------------------------------------------
+%	ESSAY BODY
+%----------------------------------------------------------------------------------------
+
+\section*{Introduction}
+
+This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
+
+\section{Generator Types}
+
+\subsection{Doubly-Fed Induction Generator with Three Stage Gearbox}
+
+Doubly-fed induction generator with three-stage gearbox (DFIG-3G) is the most common power take-off system in wind turbines, with more than half of the market share. In this configuration, the rotational speed is increased with a multi-stage gearbox. The doubly-fed induction generator rotates at speeds close to synchronous speed (1500~rpm for a 4-pole machine with 50~Hz grid).
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{DFIG_3G}
+    \caption{Doubly-fed induction generator coupled to multi-stage gearbox.} 
+    \label{dfig_3g}
+  \end{figure}
+
+The frequency of the armature voltage is controlled by the field winding. DFIGs differ from squirrel-cage induction generators as they need wound-rotor and electrical brushes. Doubly fed induction generators armature coils are directly connected to the grid. Therefore, DFIGs do not require full-rating power electronics. The rating of the converter is about 25--30\% of the generator capacity, which reduces the cost of the system \cite{Li2008a} . Some of the wind turbine companies that use this configuration have been presented in Table XXX.
+
+The advantages of the DFIG system can be listed as;
+
+\begin{itemize}
+	\item Partially rated power electronics.
+	\item Ability to supply reactive power to the grid.
+	\item Off-the-shelf components.
+\end{itemize}
+
+On the other side, the disadvantages of this system are \cite{Li2008a}:
+\begin{itemize}
+	\item A multi-stage gearbox is necessary which causes heat dissipation by friction and requires regular maintenance.
+	\item A slip ring is required in the generator which may cause reliability issues.
+	\item High torque peaks in the machine and large stator peak currents under grid fault conditions. The power electronics should be protected.
+	\item In case of grid disturbances, the ride-through capability of DFIG is required which results in complex control algorithms.
+\end{itemize}
+
+One of the largest DFIG wind turbines is manufactured by RePower, which is presented in Figure 24. Recently, RePower made a contract with RWE Innogy to build RePower 6 MW wind turbines, which will be installed in the Westereems wind farm in the Dutch province of Gronigen.
+
+\begin{figure}[]
+  \centering
+  \includegraphics[width=0.45\textwidth]{repower_nacelle}
+  \hfill
+    \includegraphics[width=0.5\textwidth]{repower_farm}
+\caption{RePower 6 MW wind turbines with DFIG (Courtesy of RePower, Jerome a Paris).}
+  \label{offshore-turbine-size}
+\end{figure}
+
+
+\section*{Section Name}
+
+
+\begin{wrapfigure}{l}{0.4\textwidth} % Inline image example
+\begin{center}
+\includegraphics[width=0.38\textwidth]{fish.png}
+\end{center}
+\caption{Fish}
+\end{wrapfigure}
+
+Aliquam fringilla non diam sed varius. Suspendisse tellus felis, hendrerit non bibendum ut, adipiscing vitae diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lobortis purus eget nisl scelerisque, commodo rhoncus lacus porta. Vestibulum vitae turpis tincidunt, varius dolor in, dictum lectus. Aenean ac ornare augue, ac facilisis purus. Sed leo lorem, molestie sit amet fermentum id, suscipit ut sem. Vestibulum orci arcu, vehicula sed tortor id, ornare dapibus lorem. Praesent aliquet iaculis lacus nec fermentum. Morbi eleifend blandit dolor, pharetra hendrerit neque ornare vel. Nulla ornare, nisl eget imperdiet ornare, libero enim interdum mi, ut lobortis quam velit bibendum nibh.
+
+Morbi tempor congue porta. Proin semper, leo vitae faucibus dictum, metus mauris lacinia lorem, ac congue leo felis eu turpis. Sed nec nunc pellentesque, gravida eros at, porttitor ipsum. Praesent consequat urna a lacus lobortis ultrices eget ac metus. In tempus hendrerit rhoncus. Mauris dignissim turpis id sollicitudin lacinia. Praesent libero tellus, fringilla nec ullamcorper at, ultrices id nulla. Phasellus placerat a tellus a malesuada.
+
+%------------------------------------------------
+
+\section*{Conclusion}
+
+Fusce in nibh augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In dictum accumsan sapien, ut hendrerit nisi. Phasellus ut nulla mauris. Phasellus sagittis nec odio sed posuere. Vestibulum porttitor dolor quis suscipit bibendum. Mauris risus lectus, cursus vitae hendrerit posuere, congue ac est. Suspendisse commodo eu eros non cursus. Mauris ultrices venenatis dolor, sed aliquet odio tempor pellentesque. Duis ultricies, mauris id lobortis vulputate, tellus turpis eleifend elit, in gravida leo tortor ultricies est. Maecenas vitae ipsum at dui sodales condimentum a quis dui. Nam mi sapien, lobortis ac blandit eget, dignissim quis nunc.
+
+\begin{enumerate}
+\item First numbered list item
+\item Second numbered list item
+\end{enumerate}
+
+Donec luctus tincidunt mauris, non ultrices ligula aliquam id. Sed varius, magna a faucibus congue, arcu tellus pellentesque nisl, vel laoreet magna eros et magna. Vivamus lobortis elit eu dignissim ultrices. Fusce erat nulla, ornare at dolor quis, rhoncus venenatis velit. Donec sed elit mi. Sed semper tellus a convallis viverra. Maecenas mi lorem, placerat sit amet sem quis, adipiscing tincidunt turpis. Cras a urna et tellus dictum eleifend. Fusce dignissim lectus risus, in bibendum tortor lacinia interdum.
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\bibliographystyle{unsrt}
+
+\bibliography{../refler/offshore-wind-generators}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
