@@ -132,6 +132,156 @@ One of the largest DFIG wind turbines is manufactured by RePower, which is prese
   \label{offshore-turbine-size}
 \end{figure}
 
+\subsection{Direct Drive}
+
+In this topology, the generator is directly connected to the turbine, so the generator speed is very low (usually in the range of 10--20~rpm). Thus, the torque requirements of direct-drive power take-off systems are very high, which results in very large and heavy generators. The large diameter of direct-drive generator means heavier support structure and large air-gap due to tolerances and deflections.
+
+The advantages of direct drive generators are simplified drive train and high overall efficiency \cite{Li2008a}. The absence of gearbox reduces the maintenance requirements and increases the reliability. Two types of generators are generally used with direct-drive configuration: electrically excited synchronous generators and permanent magnet generators. 
+
+\subsubsection{Electrically-Excited Synchronous Generators}
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{EESG}
+    \caption{Direct drive electrically excited synchronous generator.} 
+    \label{eesg}
+  \end{figure}
+
+The direct-drive electrically excited synchronous generator is similar to conventional synchronous generator with the exception that it needs to have high number of poles to compensate for the low rotational speed. The generator has a wound rotor winding which requires slip rings to excite. The reactive power and generator speed can be controlled using the field current. The assembly is easier compared to permanent magnet machines. The overall cost is lower than the permanent magnet generators. The disadvantages of this system can be listed as:
+
+\begin{itemize}
+	\item Largest and heaviest generator type.
+	\item Slip rings require maintenance.
+	\item Losses in the field winding.
+\end{itemize}
+
+Enercon uses electrically excited synchronous generators in its direct-drive wind turbines, which is one of the largest generators. It is 10 m in diameter and weights 220 tones (see Figure~\ref{enercon}). 
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{enercon}
+    \caption{Enercon E-126 6 MW, 13 rpm direct-drive electrically excited synchronous generator.} 
+    \label{enercon}
+  \end{figure}
+
+
+\subsubsection{Permanent Magnet Synchronous Generators}
+
+Compared the geared solutions and direct-drive electrically excited synchronous generators; direct-drive permanent magnet generators have the following advantages:
+
+\begin{itemize}
+	\item The generator has no slip rings, thus does not require regular maintenance.
+	\item No field winding losses, the generator has a better efficiency.
+	\item PM generators usually have higher torque densities.
+\end{itemize}
+
+On the other side, the drawbacks of the permanent magnet generators can be listed as;
+
+\begin{itemize}
+	\item Difficult to assembly (for iron-cored machines).
+	\item High permanent-magnet prices increase the cost of the generator.
+	\item Risk of demagnetization of magnets during short-circuit faults.
+	\item No control over the induced voltage magnitude.
+\end{itemize}
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{DDPMG}
+    \caption{Direct drive permanent magnet generator.} 
+    \label{eesg}
+  \end{figure}
+
+On the other hand, the cost of permanent magnet generators has significantly increased due to steep increase in rare-earth permanent magnet prices because of recent export and mining regulations introduced by China. The price of rare-earth elements has increased more than tenfold since 2009 \cite{rareearthelements}. Neodymium prices increased by 65\% in the last four months \cite{japantimes}. It is argued that the prices may go down after 2013 as new mines come on-stream, but the magnet prices will continue to be a big burden for DDPMGs.
+
+There are a few permanent magnet topologies that aim to achieve a higher torque density. One of the best candidates is the transverse flux permanent magnet (TFPM) machine. In a TFPM machine the winding space can be increased without decreasing the available space for the main flux \cite{Bang2010}. Thus, the machine can have a short pole pitch which helps to increase the frequency and magnitude of the induced voltage at low rotational speeds. In \cite{Bang2010}, Bang summarized different TFPM machines and evaluated them for direct-drive wind turbine applications. It is stated that, a 5~MW TFPM machine is  25\% lighter than a conventional PMG. In general, TFPM machines have simple windings and higher torque densities. On the other side, the flux path is more complex making the mechanical design and manufacturing more complicated \cite{Bang2009,Bang2008}.
+
+\subsubsection{Hydraulic Power Take-off Systems}
+
+There are two main concepts that use hydraulic components in wind turbines. The first one is presented in Figure~\ref{hydraulics}. In this configuration, an automatic hydraulic transmission is placed between generator and gearbox, which usually has two-stages. The output speed of the hydraulic torque converter is controlled so that the generator always rotates at synchronous speed (e.g. 1500~rpm for a 4-pole machine connected to 50 Hz grid). In the second configuration (as presented in Figure~\ref{eesg_hydraulics}) there is no mechanical gearbox and a hydraulic pump is directly coupled to the turbine. The hydraulic pump is coupled to a hydraulic motor that drives a synchronous generator at constant speed.
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{hydraulics}
+    \caption{Hydraulic system coupled with two-stage gearbox and synchronous generator.} 
+    \label{hydraulics}
+  \end{figure}
+
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{EESG_hydraulics}
+    \caption{Power take-off system with hydraulic transmission and synchronous generator.} 
+    \label{eesg_hydraulics}
+  \end{figure}
+
+The first configuration (Figure~\ref{hydraulics}) has been used by Dewind in a 2~MW wind turbine (see Figure 30). WinDrive technology is a hydraulic transmission developed by Voith Turbo. In this configuration, the generator rotates at synchronous speed regardless of turbine speed. Thus, a conventional synchronous generator can be connected directly to the medium-voltage grid without intermediate electrical stages such as power electronics and step-up transformer. The absence of power electronics and transformer means reduced mass and increased reliability. Voltage and power factor can be easily controlled with the field current.
+
+  \begin{figure}
+    \centering
+    \includegraphics[height=1.2in]{voith_windrive}
+    \includegraphics[height=1.2in]{voith_schematic}
+    \caption{Windrive 2~MW power take-off system with hydraulic transmission (Courtesy of Voith Turbo).} 
+    \label{voith}
+  \end{figure}
+
+The second configuration (Figure~\ref{eesg_hydraulics}) is proposed by Artemis Intelligent Power) with Digital Displacement Technology. It uses digital switches to control the power output of the device. Digital control ensures fast response and efficient operation. Artemis Intelligent Power proposed a 7~MW hydraulic power take-off system. The configuration has a digital displacement pump and two hydraulic motors connected to two synchronous generators. Two generator configuration introduces some redundancy in the system. Thus, even if one of the sets fails the other one can continue to generate power at part-load. Furthermore, at partial loads one of the sets can be idled to increase overall efficiency.
+
+The weak point of a hydraulic system is the fault ride through capabilities. Since there are no intermediate stages between generator and grid, in case of a grid-fault the control loop of the hydraulic system may not be fast enough to respond within grid requirements. Mechanical control systems may not be fast enough. However, Artemis Intelligent Power’s electronically controlled hydraulic valves decrease the reaction time of the system. In \cite{artemis}, it is claimed that control bandwidths up to 20~Hz are achievable.
+
+\subsubsection{Generators with a Single Stage Gearbox}
+
+Direct-drive generators have many advantages compared to geared generators. The most obvious one is the higher availability and reduced maintenance costs. However, direct drive generators are large and heavy. The middle road between direct drive generators and high speed generators is a hybrid solution with a single-stage planetary gearbox and a medium-speed generator [31]. The generator may be a permanent magnet generator or a doubly fed induction generator. A medium-speed generator reduces the cost compared to a direct-drive generator. Moreover, the most problematic part of gearbox; the high-speed stage can be eliminated.
+
+The idea was first introduced by Multibrid of Germany. This concept has gained much attention because it has lower generator cost than the direct-drive concept, and the lower-gear box cost, higher availability and operating reliability than the multiple-stage geared drive concept. In summary, the characteristics of the single stage gearbox concept are;
+
+\begin{itemize}
+	\item Reasonable overall reliability. The low-speed gear stage is more reliable than higher speed gear stages.
+	\item Decreased generator mass and cost.
+	\item Higher utilization of magnetic materials with increased rotational speed.
+\end{itemize}
+
+
+Thus, accepting a small risk on the gearbox side, but eliminating the largely technical risk, high mass and cost of direct drive system should result in higher overall reliability \cite{Bohmeke2003}. Areva and WinWinD are the main manufacturers of this concept (see Figure~\ref{multibrid}). Areva Multibrid 5~MW turbine has an integrated gearbox and generator design. The turbine has a single main bearing and has no main shaft. By this way, the nacelle mass is reduced and possible bearing problems are minimized. 
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{multibrid}
+    \caption{Areva 5 MW Multibrid wind tutbine with combined gearbox and geratator (Courtesy of Areva).} 
+    \label{multibrid}
+  \end{figure}
+
+\subsubsection{Comparison of Power Take-off Systems}
+
+
+The different drive-train options have been compared in the previous section. The advantages and disadvantages of these power take-off systems have been tabulated in Table XXX.
+
+
+XXX TABLO EKLE
+
+The system cost and mass of different power take-off systems have been compared in UpWind project for turbines with a power rating of 0.75 MW, 3 MW, 10 MW [3]. The system cost includes, generator active material cost, generator construction, the gearbox (for geared PTO systems), power electronic cost and electrical subsystem cost. The generator system weight is the combined weight of generator (inactive and active materials) and gearbox. The graphs show that direct-drive generators have the highest mass and cost. The lightest solution is the permanent magnet generator connected to a multi-stage gearbox. The least expensive option is given as the doubly-fed induction generator connected to a single stage gearbox.
+
+ELDEN GECIR
+
+\section{Novel Power Take-off Systems}
+
+As well as the conventional power take-off systems listed in the previous sections, there are some novel concepts that can be used for offshore wind turbines. The concepts covered in this report are:
+
+\subsection{Ironless Permanent-Magnet Generators}
+
+For conventional permanent magnet generators, electrical steel laminations are used in stator and rotor. The electrical steel is good to conduct magnetic flux, but it is difficult to assembly an iron cored permanent magnet generator due to high magnetic attraction forces between rotor and stator. Furthermore, the magnetic attraction forces put extra burden on bearings and mechanical structure. This attraction forces can be eliminated with an air cored stator winding design \cite{Mueller2009}. The elimination of these forces reduces the structural mass considerably \cite{McDonald2008b}. Also, the machine can be assembled and maintained much easier. 
+
+
+RESIM EKLE
+
+As an additional advantage, several axial flux permanent magnet machines can be stacked in the axial direction. Thus, each machine can operate independently and a faulty section can be disconnected from the rest of the machine. Thus, the machine can operate at partial load until it is maintained. 
+The disadvantages of air cored permanent magnet generators can be listed as;
+Increased magnet mass and cost compared to iron cored PMGs.
+Lower air-gap flux density.
+Heat transfer ratio is reduced. Additional cooling system may be required (Subtask 2.3.i).
+Soft magnetic composites (SMCs) can also be used in armature coils instead of steel laminations. SMCs can be manufactured in complex shapes, giving more freedom and modularity in machine design. A spin-out company from University of Oxford, YASA (yokeless and segmented armature) motors utilized SMCs in their PM motors, which is presented in Figure 35. The motor is optimized for high-torque electric car motors and has a forced-oil-cooling system. The motor has a high efficiency and torque density but the performance and total mass of this machine is not clear for large diameter, low-speed applications.
+
+
+
 
 \section*{Section Name}
 
