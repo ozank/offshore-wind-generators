@@ -271,44 +271,119 @@ As well as the conventional power take-off systems listed in the previous sectio
 For conventional permanent magnet generators, electrical steel laminations are used in stator and rotor. The electrical steel is good to conduct magnetic flux, but it is difficult to assembly an iron cored permanent magnet generator due to high magnetic attraction forces between rotor and stator. Furthermore, the magnetic attraction forces put extra burden on bearings and mechanical structure. This attraction forces can be eliminated with an air cored stator winding design \cite{Mueller2009}. The elimination of these forces reduces the structural mass considerably \cite{McDonald2008b}. Also, the machine can be assembled and maintained much easier. 
 
 
-RESIM EKLE
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=0.5\textwidth]{goliath}
+    \includegraphics[width=0.45\textwidth]{25kw_cgen}
+    \includegraphics[width=0.5\textwidth]{c-core_kamper}
+    \caption{Air cored permanent magnet generators: 3 MW radial flux PM generator (Courtesy of Goliath Wind), 25 kW axial flux PM generator (Courtesy of NGenTec), 300 kW radial flux PM configuration \cite{Wijk2010}.} 
+    \label{air_cored}
+  \end{figure}
+
 
 As an additional advantage, several axial flux permanent magnet machines can be stacked in the axial direction. Thus, each machine can operate independently and a faulty section can be disconnected from the rest of the machine. Thus, the machine can operate at partial load until it is maintained. 
+
 The disadvantages of air cored permanent magnet generators can be listed as;
-Increased magnet mass and cost compared to iron cored PMGs.
-Lower air-gap flux density.
-Heat transfer ratio is reduced. Additional cooling system may be required (Subtask 2.3.i).
-Soft magnetic composites (SMCs) can also be used in armature coils instead of steel laminations. SMCs can be manufactured in complex shapes, giving more freedom and modularity in machine design. A spin-out company from University of Oxford, YASA (yokeless and segmented armature) motors utilized SMCs in their PM motors, which is presented in Figure 35. The motor is optimized for high-torque electric car motors and has a forced-oil-cooling system. The motor has a high efficiency and torque density but the performance and total mass of this machine is not clear for large diameter, low-speed applications.
+
+\begin{itemize}
+	\item Increased magnet mass and cost compared to iron cored PMGs.
+	\item Lower air-gap flux density.
+	\item Heat transfer ratio is reduced. Additional cooling system may be required
+\end{itemize}
+
+Soft magnetic composites (SMCs) can also be used in armature coils instead of steel laminations. SMCs can be manufactured in complex shapes, giving more freedom and modularity in machine design. A spin-out company from University of Oxford, YASA (yokeless and segmented armature) motors utilized SMCs in their PM motors, which is presented in Figure \ref{yasa_motor}. The motor is optimized for high-torque electric car motors and has a forced-oil-cooling system. The motor has a high efficiency and torque density but the performance and total mass of this machine is not clear for large diameter, low-speed applications.
 
 
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=0.4\textwidth]{yasa_motor}
+    \caption{YASA (yokeless and segmented armature) motor, 750 Nm (Courtesy of YASA Motors).} 
+    \label{yasa_motor}
+  \end{figure}
+
+\subsection{Pseudo Direct Drive (Magnetic Gears)}
+
+In pseudo direct drive system, the generator is coupled to prime-mover with an intermediate magnetic transmission. The generator can be integrated with the gearbox as shown in Figure 36. Thus, the input shaft can be connected directly to slow rotating turbine, while actual speed of the generator is maintained at higher values. By this way, the size of the generator can be greatly reduced without using mechanical or hydraulic transmission.
+
+The magnetic gears are contactless, lubricant-free and have no friction. Thus, magnetic transmission offer higher efficiency and reliability compared to geared systems. In a magnetic gear, the generator is not directly coupled with the prime mover; the vibrations are not transferred to the generator side and if input torque exceeds the maximum torque, the magnetic gears just decouple. This is advantageous for some cases, but it also limits the fault-ride-through capabilities of the system.
+
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=0.4\textwidth]{magnomatics}
+    \caption{Combined magnetic gearbox and generators (Courtesy of Magnomatics).} 
+    \label{magnomatics}
+  \end{figure}
 
 
-\section*{Section Name}
+Magnomatics is the leading company in magnetic transmission design. They are developing magnetic gears for electric car motors. Recently, Magnomatics signed a contract with UK Ministry of Defence to develop a magnetically geared propulsion system for ship propulsion. They are also planning to manufacture solutions for renewable energy. 
+
+\subsubsection{Superconducting Generators}
+
+Superconducting electrical machines have drawn interest since the discovery of the first superconductors in 1911, but it was after the discovery of high-temperature superconductors that the research on the applications of superconductivity has been boosted. Superconducting machines have a very high power density and can reduce the size of the machine significantly. For example in Figure \ref{amsc_36mw}, the size and mass comparison between a superconducting machine and conventional motor (ship propulsion motor) is presented.
 
 
-\begin{wrapfigure}{l}{0.4\textwidth} % Inline image example
-\begin{center}
-\includegraphics[width=0.38\textwidth]{fish.png}
-\end{center}
-\caption{Fish}
-\end{wrapfigure}
+** Add size comparison text
 
-Aliquam fringilla non diam sed varius. Suspendisse tellus felis, hendrerit non bibendum ut, adipiscing vitae diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lobortis purus eget nisl scelerisque, commodo rhoncus lacus porta. Vestibulum vitae turpis tincidunt, varius dolor in, dictum lectus. Aenean ac ornare augue, ac facilisis purus. Sed leo lorem, molestie sit amet fermentum id, suscipit ut sem. Vestibulum orci arcu, vehicula sed tortor id, ornare dapibus lorem. Praesent aliquet iaculis lacus nec fermentum. Morbi eleifend blandit dolor, pharetra hendrerit neque ornare vel. Nulla ornare, nisl eget imperdiet ornare, libero enim interdum mi, ut lobortis quam velit bibendum nibh.
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=0.8\textwidth]{amsc_ddpm_hts_comparison}
+  	\caption{Size and mass comparison of direct-drive permanent magnet generator and superconducting generator for different power ratings \cite{amsc_presentation}.} 
+  	\label{ddpm_hts_compare}
+  \end{figure}
 
-Morbi tempor congue porta. Proin semper, leo vitae faucibus dictum, metus mauris lacinia lorem, ac congue leo felis eu turpis. Sed nec nunc pellentesque, gravida eros at, porttitor ipsum. Praesent consequat urna a lacus lobortis ultrices eget ac metus. In tempus hendrerit rhoncus. Mauris dignissim turpis id sollicitudin lacinia. Praesent libero tellus, fringilla nec ullamcorper at, ultrices id nulla. Phasellus placerat a tellus a malesuada.
 
-%------------------------------------------------
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=0.45\textwidth]{36MW_AMSC}
+    \includegraphics[width=0.4\textwidth]{amsc_36mw_compare}
+    \caption{36.5 MW superconducting ship propulsion motor for comparison with a conventional propulsion motor US Navy and size  (Courtesy of AMSC).} 
+    \label{amsc_36mw}
+  \end{figure}
 
-\section*{Conclusion}
+Some superconducting machine topologies are summarized in \cite{Kalsi2004a,Gieras2008a}. Among these machines, the most common type is a hybrid superconducting synchronous machine which is a synchronous machine with a superconducting dc-field winding. These superconducting machines have high power density but require cryogenic couplers and field excitation brushes in the rotor structure, which causes reliability problems. 
 
-Fusce in nibh augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In dictum accumsan sapien, ut hendrerit nisi. Phasellus ut nulla mauris. Phasellus sagittis nec odio sed posuere. Vestibulum porttitor dolor quis suscipit bibendum. Mauris risus lectus, cursus vitae hendrerit posuere, congue ac est. Suspendisse commodo eu eros non cursus. Mauris ultrices venenatis dolor, sed aliquet odio tempor pellentesque. Duis ultricies, mauris id lobortis vulputate, tellus turpis eleifend elit, in gravida leo tortor ultricies est. Maecenas vitae ipsum at dui sodales condimentum a quis dui. Nam mi sapien, lobortis ac blandit eget, dignissim quis nunc.
+Data from direct-drive systems have been collected to compare mass to torque ratio of HTS machines with other type of generators. The result is presented in a bubble chart in Figure 38. The data for each generator can be found in \cite{Keysan2011b}. The dashed line represents ratio of generator mass to torque for permanent-magnet machines which is estimated as 25 kg/kNm by Bang et al. in \cite{Bang2008}. The Enercon-E112, which has a high mass to torque ratio (66.6 kg/kNm) is the only copper field synchronous generator in the graph. The continuous line represents the linear trend line estimated using the HTS machines in the graph.). It can be seen from the graph that HTS machines are generally lighter than PM generators for applications with torque requirements larger than 3000 kNm. 
 
-\begin{enumerate}
-\item First numbered list item
-\item Second numbered list item
-\end{enumerate}
+**Figure 38 mass comparison graph
 
-Donec luctus tincidunt mauris, non ultrices ligula aliquam id. Sed varius, magna a faucibus congue, arcu tellus pellentesque nisl, vel laoreet magna eros et magna. Vivamus lobortis elit eu dignissim ultrices. Fusce erat nulla, ornare at dolor quis, rhoncus venenatis velit. Donec sed elit mi. Sed semper tellus a convallis viverra. Maecenas mi lorem, placerat sit amet sem quis, adipiscing tincidunt turpis. Cras a urna et tellus dictum eleifend. Fusce dignissim lectus risus, in bibendum tortor lacinia interdum.
+There are some companies interested in superconducting wind turbines, Converteam -now acquired by General Electric- proposed an 8 MW, 12 rpm superconducting generator, which will be 5 m in diameter and approximately 100 tonnes \cite{Lewis2007}. 
+
+AMSC aims to manufacture a 10 MW direct-drive superconducting generator: SeaTitan which is shown in Figure 39. The generator will have an outer diameter of 4.5-5 m and have a mass of 150 tonnes \cite{Snitchler2011}.
+
+**resmi cikar
+
+Recently, Department of Energy (U.S.) awarded \$7.5 million to six companies to help develop next generation wind turbines \cite{dep_energy}. Two of these companies are planning to manufacture direct-drive superconducting generators. GE Global Research (in partnership with Superconductor Technologies Inc.) aims to design a 10 MW direct-drive low- temperature superconducting generator –using MgB2 wires. The generator is planned to have a stationary superconducting field winding to reduce cryogenic-coupler faults. The other company is Advanced Magnet Lab. which plans to design a 10 MW, 10 rpm, fully-superconducting generator which will be 70 tonnes. The ac losses on the armature coils can be minimized using their patented double-helix winding arrangement.
+
+The high efficiency of superconducting machines has been emphasized in the first applications, but efficiency is not solely sufficient. In order to penetrate into the renewable energy market,  superconducting generators have to prove that they are also more reliable than alternative power take-off systems such as DDPM machines and geared induction machines \cite{Abrahamsen2010}. In a HTS machine, the cryogenic system holds the risk of decreasing the overall reliability. In particular, the cryogenic pump and couple are the most critical components. The cryogenic coupler can be eliminated by using a stationary superconducting field, which has many advantages \cite{Gieras2008a}:
+\begin{itemize}
+	\item No cryogenic coupler, more robust and cheap cooling system
+	\item No cryogenic coupler, more robust and cheap cooling system
+	\item No brushes or complex excitation systems
+	\item No centrifugal forces and transient torques that can damage the superconducting material
+\end{itemize}
+
+
+A novel superconducting generator topology has been proposed in \cite{Keysan2011e}. A single loop-shaped stationary superconducting field winding is used in the generator. The rotating parts only consist of modular iron cores. 
+
+**duzenle
+
+\subsection{Generation at Sea Level}
+
+**Hydraulics kismiyla birlestirilebilir
+
+Lower tower top mass is favourable in larger offshore wind turbines, especially for floating platforms. Several hundred tons of nacelle mass may introduce stability issues and increases the installation cost. The tower top mass can be reduced by placing the electrical generator at sea level. This also means easier access to some critical components. The response time of the hydraulic pump and hydraulic motor should be fast enough to satisfy the fault-ride-through requirements of the grid.
+
+ChapDrive is developing a 5 MW hydraulic power take-off system for offshore wind turbines. The project is partly funded by Statoil. Note the hydraulic motor and the generator is placed at ground level, inside of the tower. Top mass of the turbine is expected to be less than 200 tonnes.
+
+University of Delft, applies the same hydraulic system in a slightly different in the We-at-Sea project \cite{Diepeveen2004}. Instead of using individual generators for each turbine, they propose to use a central generator(see Figure \ref{we-at-sea}) unit for all the turbines in the farm. Sea water can be used to transfer energy from turbines to central generation unit. This unit can be placed on shore for near off-shore wind turbines.
+
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=0.45\textwidth]{we-at-sea}
+    \caption{Schematic of the seawater-based hydraulic power take-off system  \cite{Diepeveen2004}.} 
+    \label{we-at-sea}
+  \end{figure}
+
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
