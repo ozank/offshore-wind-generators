@@ -55,7 +55,7 @@
 %	TITLE
 %----------------------------------------------------------------------------------------
 
-\title{\textbf{Electrical Generator Technologies for Offshore Wind}} % Subtitle
+\title{\textbf{Electrical Generator Technologies for Offshore Wind Turbines}} % Subtitle
 
 \author{\textsc{Ozan Keysan} % Author
 \\{\textit{Institute for Energy  Systems\\ University of Edinburgh}}} % Institution
@@ -88,13 +88,54 @@ Morbi tempor congue porta. Proin semper, leo vitae faucibus dictum, metus mauris
 
 \section*{Introduction}
 
-This statement requires citation \cite{Smith:2012qr}; this one does too \cite{Smith:2013jd}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum lacus sem, ut varius ante dignissim ac. Sed a mi quis lectus feugiat aliquam. Nunc sed vulputate velit. Sed commodo metus vel felis semper, quis rutrum odio vulputate. Donec a elit porttitor, facilisis nisl sit amet, dignissim arcu. Vivamus accumsan pellentesque nulla at euismod. Duis porta rutrum sem, eu facilisis mi varius sed. Suspendisse potenti. Mauris rhoncus neque nisi, ut laoreet augue pretium luctus. Vestibulum sit amet luctus sem, luctus ultrices leo. Aenean vitae sem leo.
+In this chapter different electric generator options for offshore wind turbines will be reviewed. The mechanical energy captured by the turbine blades are converted to electrical energy and is fed into the grid with a series of components such as; gearbox, generator, power electronics, transformer and transmission. Generator is the most important component in the power take-off system and there are many different types of generator types that can be used in turbines depending on the size, operating conditions, and speed range. Some common drive train types are tabulated in Table \ref{generator_manufacturers}.
 
-\section{Generator Types}
+In this chapter, conventional generator technologies will be reviewed as well as some novel generator designs.
 
-\subsection{Doubly-Fed Induction Generator with Three Stage Gearbox}
 
-Doubly-fed induction generator with three-stage gearbox (DFIG-3G) is the most common power take-off system in wind turbines, with more than half of the market share. In this configuration, the rotational speed is increased with a multi-stage gearbox. The doubly-fed induction generator rotates at speeds close to synchronous speed (1500~rpm for a 4-pole machine with 50~Hz grid).
+%GE machine specs
+\begin{table}[t]
+  \centering
+  \begin{tabular}{clrrlc}
+	  
+	  Drive Train & Generator & Power & Rotor & Rated & Manufacturer \\
+	  \hline
+		& DFIG & 2 MW & 90 m & 20.7 rpm & DeWind \\
+		& DFIG & 2 MW & 90 m & 19 rpm & Gamesa \\
+	  	& WRIG & 2 MW & 88 m &  & Suzlon \\
+	  	& PMSG & 2 MW & 88 m & 16.5 rpm & General Electric \\
+	 Multiple 	& DFIG & 2.5 MW & 90 m & 14.9 rpm & Nordex \\
+	Stage  	& DFIG & 3 MW & 100 m & 14.3 rpm & Ecotecnia \\
+  	Gearbox & DFIG & 3.6 MW & 104 m & 15.3 rpm & General Electric \\
+	  	& DFIG & 4.5 MW & 120 m & 14.9 rpm & Vestas \\
+	  	& DFIG & 6 MW & 126 m & 12.1 rpm & RePower \\
+	  	\hline
+	Single--Stage  	& PMSG & 3 MW & 90 m & 18 rpm & Winwind \\
+	Gearbox  	& PMSG & 5 MW & 116 m & 14.8 rpm & Multibrid \\
+	  	\hline
+	 Hydraulic 	& EESG & 2 MW & 90 m & 20.7 rpm & DeWind \\
+	 Transmission 	& EESG & 2.4 MW &  & 10 rpm & Mitsubishi \\
+	  	\hline
+	  	& PMSG & 1.5 MW & 77 m & 17.3 rpm & Vensys \\
+	  	& EESG & 1.6 MW & 78 m &  & MTOI \\
+	  	& PMSG & 2 MW &  &  & Mitsubishi \\
+	Direct-Drive  	& PMSG & 2 MW & 71 m & 23 rpm & Zephyros \\
+	  	& PMSG & 3 MW & 101 m & 14.4 rpm & LeitWind \\
+	  	& EESG & 4.5 MW & 114 m & 13 rpm & Enercon \\
+	  	& EESG & 7.5 MW & 127 m & 11.7 rpm & Enercon \\
+	  \hline
+
+  \end{tabular}
+  \caption{Drive train types of some wind turbines \cite{wind_energy_facts,upwind2011}.}
+  \label{generator_manufacturers}
+\end{table}
+
+
+\section{Doubly-fed Induction Generator}
+
+Doubly-fed induction generator is a special type of induction machine, with electrical brushes to control rotor currents. 
+
+Doubly-fed induction generator coupled with three-stage gearbox (DFIG-3G) is the most common power take-off system in wind turbines, with more than half of the market share. In this configuration, the rotational speed is increased with a multi-stage gearbox. The doubly-fed induction generator rotates at speeds close to synchronous speed (1500~rpm for a 4-pole machine with 50~Hz grid).
 
   \begin{figure}
     \centering
@@ -103,7 +144,7 @@ Doubly-fed induction generator with three-stage gearbox (DFIG-3G) is the most co
     \label{dfig_3g}
   \end{figure}
 
-The frequency of the armature voltage is controlled by the field winding. DFIGs differ from squirrel-cage induction generators as they need wound-rotor and electrical brushes. Doubly fed induction generators armature coils are directly connected to the grid. Therefore, DFIGs do not require full-rating power electronics. The rating of the converter is about 25--30\% of the generator capacity, which reduces the cost of the system \cite{Li2008a} . Some of the wind turbine companies that use this configuration have been presented in Table XXX.
+The frequency of the armature voltage is controlled by the field winding. DFIGs differ from squirrel-cage induction generators as they need wound-rotor and electrical brushes. Armature winding of the doubly-fed induction generator is directly connected to the grid. Therefore, DFIGs do not require full-rating power electronics. The rating of the converter is about 25--30\% of the generator capacity, which reduces the cost of the system and the main advantage of the generator \cite{Li2008a} . Some of the wind turbine companies that use this configuration have been presented in Table \ref{generator_manufacturers}.
 
 The advantages of the DFIG system can be listed as;
 
@@ -113,7 +154,8 @@ The advantages of the DFIG system can be listed as;
 	\item Off-the-shelf components.
 \end{itemize}
 
-On the other side, the disadvantages of this system are \cite{Li2008a}:
+However, DFIGs also have a few disadvantages \cite{Li2008a}:
+
 \begin{itemize}
 	\item A multi-stage gearbox is necessary which causes heat dissipation by friction and requires regular maintenance.
 	\item A slip ring is required in the generator which may cause reliability issues.
@@ -121,7 +163,7 @@ On the other side, the disadvantages of this system are \cite{Li2008a}:
 	\item In case of grid disturbances, the ride-through capability of DFIG is required which results in complex control algorithms.
 \end{itemize}
 
-One of the largest DFIG wind turbines is manufactured by RePower, which is presented in Figure 24. Recently, RePower made a contract with RWE Innogy to build RePower 6 MW wind turbines, which will be installed in the Westereems wind farm in the Dutch province of Gronigen.
+One of the largest DFIG wind turbines is manufactured by RePower, which is presented in Figure \ref{repower}. Recently, RePower made a contract with RWE Innogy to build 6~MW wind turbines, which will be installed in the Westereems wind farm in the Dutch province of Gronigen.
 
 \begin{figure}[]
   \centering
@@ -129,16 +171,16 @@ One of the largest DFIG wind turbines is manufactured by RePower, which is prese
   \hfill
     \includegraphics[width=0.5\textwidth]{repower_farm}
 \caption{RePower 6 MW wind turbines with DFIG (Courtesy of RePower, Jerome a Paris).}
-  \label{offshore-turbine-size}
+  \label{repower}
 \end{figure}
 
-\subsection{Direct Drive}
+\section{Direct Drive}
 
 In this topology, the generator is directly connected to the turbine, so the generator speed is very low (usually in the range of 10--20~rpm). Thus, the torque requirements of direct-drive power take-off systems are very high, which results in very large and heavy generators. The large diameter of direct-drive generator means heavier support structure and large air-gap due to tolerances and deflections.
 
 The advantages of direct drive generators are simplified drive train and high overall efficiency \cite{Li2008a}. The absence of gearbox reduces the maintenance requirements and increases the reliability. Two types of generators are generally used with direct-drive configuration: electrically excited synchronous generators and permanent magnet generators. 
 
-\subsubsection{Electrically-Excited Synchronous Generators}
+\subsection{Electrically-Excited Synchronous Generators}
 
   \begin{figure}
     \centering
