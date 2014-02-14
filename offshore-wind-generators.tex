@@ -23,7 +23,6 @@
 
 \usepackage[protrusion=true,expansion=true]{microtype} % Better typography
 \usepackage{graphicx} % Required for including pictures
-\usepackage{graphicx}
 %\usepackage[font=small]{subfig}
 \graphicspath{{images/}}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
@@ -286,9 +285,9 @@ Artemis Intelligent Power proposed to use a hydraulic transmission system contro
 
 The weak point of a hydraulic system is the fault ride through capabilities. Since there are no intermediate stages between generator and grid, in case of a grid-fault the control loop of the hydraulic system may not be fast enough to respond within grid requirements. Mechanical control systems may not be fast enough. However, Artemis Intelligent Power's electronically controlled hydraulic valves decrease the reaction time of the system. In \cite{artemis}, it is claimed that control bandwidths up to 20~Hz are achievable.
 
-\section{Generators with a Single Stage Gearbox}
+\section{Generators with Single Stage Gearbox}
 
-Direct-drive generators have many advantages compared to geared generators. The most obvious one is the higher availability and reduced maintenance costs. However, direct drive generators are large and heavy. The middle road between direct drive generators and high speed generators is a hybrid solution with a single-stage planetary gearbox and a medium-speed generator [31]. The generator may be a permanent magnet generator or a doubly fed induction generator. A medium-speed generator reduces the cost compared to a direct-drive generator. Moreover, the most problematic part of gearbox; the high-speed stage can be eliminated.
+Direct-drive generators have many advantages compared to geared generators. The most obvious one is the higher availability and reduced maintenance costs. However, direct drive generators are large and heavy. The middle road between direct drive generators and high speed generators is a hybrid solution with a single-stage planetary gearbox and a medium-speed generator \cite{Li2009}. The generator can be a permanent magnet generator or a doubly fed induction generator. A medium-speed generator reduces the cost compared to a direct-drive generator. Moreover, the most problematic part of gearbox; the high-speed stage can be eliminated.
 
 The idea was first introduced by Multibrid of Germany. This concept has gained much attention because it has lower generator cost than the direct-drive concept, and the lower-gear box cost, higher availability and operating reliability than the multiple-stage geared drive concept. In summary, the characteristics of the single stage gearbox concept are;
 
@@ -297,7 +296,6 @@ The idea was first introduced by Multibrid of Germany. This concept has gained m
 	\item Decreased generator mass and cost.
 	\item Higher utilization of magnetic materials with increased rotational speed.
 \end{itemize}
-
 
 Thus, accepting a small risk on the gearbox side, but eliminating the largely technical risk, high mass and cost of direct drive system should result in higher overall reliability \cite{Bohmeke2003}. Areva and WinWinD are the main manufacturers of this concept (see Figure~\ref{multibrid}). Areva Multibrid 5~MW turbine has an integrated gearbox and generator design. The turbine has a single main bearing and has no main shaft. By this way, the nacelle mass is reduced and possible bearing problems are minimized. 
 
@@ -308,13 +306,28 @@ Thus, accepting a small risk on the gearbox side, but eliminating the largely te
     \label{multibrid}
   \end{figure}
 
-\subsubsection{Comparison of Power Take-off Systems}
-
+\section{Comparison of Generators}
 
 The different drive-train options have been compared in the previous section. The advantages and disadvantages of these power take-off systems have been tabulated in Table XXX.
 
+\begin{table}[t]
+  \centering
+  \begin{tabular}{l|cc|cc|cc|}
+	  &  \multicolumn{2}{|c|}{Multi-Stage Gearbox} &  \multicolumn{2}{|c|}{Single-Stage Gearbox} &  \multicolumn{2}{|c|}{Direct-Drive} \\
+	& DFIG & Hydraulics & DFIG & PMG & PMG & EESG \\
+	  \hline
+	  Mass & \star\star  & \star\star\star & \star\star\star & \star\star\star & \star\star & \star\\
+	  Size & \star\star\star & \star\star\star & \star\star\star & \star\star\star & \star & \star \\
+	  Efficiency & \star & \star\star & \star\star & \star\star\star & \star\star\star & \star\star\star \\
+	  Reliability & \star & \star\star & \star\star& \star\star & \star\star\star & \star\star\star \\
+	  Cost & $\star\star$ & $\star\star\star$ & $$\star\star\star$ & $\star\star$ & $\star$ & $\star$ \\
+	  \hline
+ 
+  \end{tabular}
+  \caption{Comparison of different power take-off systems.}
+  \label{generator_comparison}
+\end{table}
 
-XXX TABLO EKLE
 
 The system cost and mass of different power take-off systems have been compared in UpWind project for turbines with a power rating of 0.75 MW, 3 MW, 10 MW [3]. The system cost includes, generator active material cost, generator construction, the gearbox (for geared PTO systems), power electronic cost and electrical subsystem cost. The generator system weight is the combined weight of generator (inactive and active materials) and gearbox. The graphs show that direct-drive generators have the highest mass and cost. The lightest solution is the permanent magnet generator connected to a multi-stage gearbox. The least expensive option is given as the doubly-fed induction generator connected to a single stage gearbox.
 
