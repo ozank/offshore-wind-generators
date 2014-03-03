@@ -74,6 +74,9 @@
 %\renewcommand{\abstractname}{Summary} % Uncomment to change the name of the abstract to something else
 
 \begin{abstract}
+
+Different electric generator options for offshore wind turbines will be reviewed in this chapter.
+
 Morbi tempor congue porta. Proin semper, leo vitae faucibus dictum, metus mauris lacinia lorem, ac congue leo felis eu turpis. Sed nec nunc pellentesque, gravida eros at, porttitor ipsum. Praesent consequat urna a lacus lobortis ultrices eget ac metus. In tempus hendrerit rhoncus. Mauris dignissim turpis id sollicitudin lacinia. Praesent libero tellus, fringilla nec ullamcorper at, ultrices id nulla. Phasellus placerat a tellus a malesuada.
 \end{abstract}
 
@@ -87,9 +90,8 @@ Morbi tempor congue porta. Proin semper, leo vitae faucibus dictum, metus mauris
 
 \section*{Introduction}
 
-In this chapter different electric generator options for offshore wind turbines will be reviewed. The mechanical energy captured by the turbine blades are converted to electrical energy and is fed into the grid with a series of components such as; gearbox, generator, power electronics, transformer and transmission. Generator is the most important component in the power take-off system and there are many different types of generator types that can be used in turbines depending on the size, operating conditions, and speed range. Some common drive train types are tabulated in Table \ref{generator_manufacturers}.
 
-In this chapter, conventional generator technologies will be reviewed as well as some novel generator designs.
+The mechanical energy captured by the turbine blades are converted to electrical energy and is fed into the grid with a series of components such as; gearbox, generator, power electronics, transformer and transmission. Generator is the most important component in the power take-off system and there are many different types of generator types that can be used in turbines depending on the size, operating conditions, and speed range. Some generator types used in commercial wind turbines are presented in Table \ref{generator_manufacturers}. In this chapter,  the generators presented in the table as well as the a few other novel generator concepts will be investigated.
 
 
 %GE machine specs
@@ -125,16 +127,15 @@ In this chapter, conventional generator technologies will be reviewed as well as
 	  \hline
 
   \end{tabular}
-  \caption{Drive train types of some wind turbines \cite{wind_energy_facts,upwind2011}.}
+  \caption{Drive train types of some commercial wind turbines \cite{wind_energy_facts,upwind2011}.}
   \label{generator_manufacturers}
 \end{table}
 
-
 \section{Doubly-fed Induction Generator}
 
-Doubly-fed induction generator is a special type of induction machine, with electrical brushes to control rotor currents. 
-
-Doubly-fed induction generator coupled with three-stage gearbox (DFIG-3G) is the most common power take-off system in wind turbines, with more than half of the market share. In this configuration, the rotational speed is increased with a multi-stage gearbox. The doubly-fed induction generator rotates at speeds close to synchronous speed (1500~rpm for a 4-pole machine with 50~Hz grid).
+Doubly-fed induction generator coupled with three-stage gearbox (DFIG-3G) is the most common power take-off system in wind turbines, with more than half of the market share. Some of the wind turbine companies that use this configuration have been presented in Table \ref{generator_manufacturers}.
+In Figure \ref{repower} one of the largest DFIG wind turbines(6~MW) are presented, which are  manufactured by RePower.
+DFIG generators are usually coupled with multi-stage gearboxes to increase the rotational speed. DFIGs rotational speed is close to the synchronous speed (e.g. 1500~rpm for a 4-pole machine in a 50~Hz grid).
 
   \begin{figure}
     \centering
@@ -143,26 +144,24 @@ Doubly-fed induction generator coupled with three-stage gearbox (DFIG-3G) is the
     \label{dfig_3g}
   \end{figure}
 
-The frequency of the armature voltage is controlled by the field winding. DFIGs differ from squirrel-cage induction generators as they need wound-rotor and electrical brushes. Armature winding of the doubly-fed induction generator is directly connected to the grid. Therefore, DFIGs do not require full-rating power electronics. The rating of the converter is about 25--30\% of the generator capacity, which reduces the cost of the system and the main advantage of the generator \cite{Li2008a} . Some of the wind turbine companies that use this configuration have been presented in Table \ref{generator_manufacturers}.
+Doubly-fed induction generator is a special type of induction machine. DFIGs differ from squirrel-cage induction generators as they need wound-rotor and electrical brushes. The frequency of the armature voltage is controlled by the field winding. Armature winding of the doubly-fed induction generator is directly connected to the grid. Therefore, DFIGs do not require full-rating power electronics, which is the main advantage of this generator type. The rating of the converter is about 25--30\% of the generator capacity, which reduces the overall cost \cite{Li2008a} . 
 
 The advantages of the DFIG system can be listed as;
 
 \begin{itemize}
-	\item Partially rated power electronics.
+	\item Partially rated power electronics reduces the cost.
 	\item Ability to supply reactive power to the grid.
-	\item Off-the-shelf components.
+	\item Off-the-shelf components, wide range of generator options.
 \end{itemize}
 
 However, DFIGs also have a few disadvantages \cite{Li2008a}:
 
 \begin{itemize}
-	\item A multi-stage gearbox is necessary which causes heat dissipation by friction and requires regular maintenance.
-	\item A slip ring is required in the generator which may cause reliability issues.
+	\item A multi-stage gearbox is necessary which may cause reliability issues.
+	\item A slip ring is used, which require regular maintenance.
 	\item High torque peaks in the machine and large stator peak currents under grid fault conditions. The power electronics should be protected.
-	\item In case of grid disturbances, the ride-through capability of DFIG is required which results in complex control algorithms.
+	\item In case of grid disturbances, the ride-through requirements make the DFIG control complex.
 \end{itemize}
-
-One of the largest DFIG wind turbines is manufactured by RePower, which is presented in Figure \ref{repower}. Recently, RePower made a contract with RWE Innogy to build 6~MW wind turbines, which will be installed in the Westereems wind farm in the Dutch province of Gronigen.
 
 \begin{figure}[]
   \centering
@@ -175,9 +174,13 @@ One of the largest DFIG wind turbines is manufactured by RePower, which is prese
 
 \section{Direct Drive}
 
-In this topology, the generator is directly connected to the turbine (as shown in Figure \ref{eesg} and \ref{ddpmg}), so the generator speed is very low (usually in the range of 10--20~rpm). Thus, the torque requirements of direct-drive power take-off systems are very high, which results in very large and heavy generators. The large diameter of direct-drive generators means heavier support structure and large air-gap due to manufacturing tolerances.
+In direct-drive systems, the generator is directly connected to the turbine, therefore the generator speed is very low (usually in the range of 10--20~rpm) and the torque requirements are very high, which results in very large and heavy generators. The large diameter of direct-drive generators increases the support structure mass. Furthermore, the airgap clearance in direct-drive generators are bigger than conventional generators due to manufacturing tolerances.
 
-The advantages of direct drive generators are simplified drive train and higher efficiency (especially in partial loads) \cite{Li2008a}. The absence of gearbox reduces the maintenance requirements and increases the reliability. Two types of generators are generally used with direct-drive configuration: electrically excited synchronous generators and permanent magnet generators. 
+The advantages of direct drive generators are simplified drive train and higher efficiency (especially at partial loads) \cite{Li2008a}. The absence of gearbox reduces the maintenance requirements and increases the reliability. Two types of generators are generally used with direct-drive configuration: electrically excited synchronous generators and permanent magnet generators. 
+
+\subsection{Electrically-Excited Synchronous Generators}
+
+Schematic of an electrically excited synchronous generator is presented in Figure~\ref{eesg}. This type of generator is used in Enercon wind turbines. Enercon E-136 generator (see Figure~\ref{enercon}), which is 10 m in diameter and weights 220 tones, is one of the largest wind turbine generator. 
 
 \begin{figure}
     \centering
@@ -186,24 +189,11 @@ The advantages of direct drive generators are simplified drive train and higher 
     \label{eesg}
   \end{figure}
 
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.5\textwidth]{DDPMG}
-    \caption{Direct drive permanent magnet generator.} 
-    \label{ddpmg}
-  \end{figure}
-
-
-\subsection{Electrically-Excited Synchronous Generators}
-
-Enercon use electrically excited synchronous 
-generators in its direct-drive wind turbines, which is one of the largest generators. It is 10 m in diameter and weights 220 tones (see Figure~\ref{enercon}). 
-
-Direct-drive electrically excited synchronous generators are similar to conventional synchronous generators with the exception that it needs to have high number of poles to compensate for the low rotational speed. The generator has a wound rotor winding which requires slip rings to excite. The reactive power and generator output voltage can be controlled using the field current. The assembly is easier compared to permanent magnet machines. The overall cost is lower than the permanent magnet generators. The disadvantages of this system can be listed as:
+Direct-drive electrically excited synchronous generators are similar to conventional synchronous generators with high number of poles to compensate for the low rotational speed. The generator has a wound rotor winding which requires slip rings to excite. The reactive power and generator output voltage can be controlled using the field current. The assembly is easier compared to permanent magnet machines as there is no magnetic attraction between rotor and stator. The generator does not use rare-earth permanent magnets, so its cost is lower than PM generators. The disadvantages of the EESGs can be listed as:
 
 \begin{itemize}
 	\item Largest and heaviest generator type.
-	\item Slip rings require maintenance.
+	\item Slip rings require regular maintenance.
 	\item Losses in the field winding reduce efficiency.
 \end{itemize}
 
@@ -218,7 +208,15 @@ Direct-drive electrically excited synchronous generators are similar to conventi
 
 \subsection{Permanent Magnet Generators}
 
-Permanent magnet generators are a type of synchronous generator that use permanent magnets (usually rare-earth magnets) instead of field winding. The became popular in the recent years due to simple and robust structure. A direct-drive permanent magnet generator is shown in Figure \ref{switch}.
+Direct-drive permanent magnet generators are synchronous generators that have rare-earth magnets instead of a field winding. They became popular in the recent years due to simple and robust structure. In Figure~\ref{ddpmg}, schematic of a DDPMG is presented. In Figure~\ref{switch}, a 3.8~MW 21~rpm DDPM generator is shown, which is manufactured by the Switch. The generator is mounted directly between nacelle and the blade hubs.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{DDPMG}
+    \caption{Direct drive permanent magnet generator.} 
+    \label{ddpmg}
+\end{figure}
+
 
   \begin{figure}
     \centering
@@ -229,24 +227,24 @@ Permanent magnet generators are a type of synchronous generator that use permane
     \label{switch}
   \end{figure}
 
-Compared to geared solutions and direct-drive electrically excited synchronous generators; direct-drive permanent magnet generators have the following advantages:
+Compared to geared solutions and electrically excited synchronous generators; direct-drive permanent magnet generators have the following advantages:
 
 \begin{itemize}
-	\item The generator has no slip rings, thus does not require regular maintenance.
-	\item No field winding losses, the generator has a better efficiency.
+	\item The generator has no slip rings, which require regular maintenance.
+	\item Having no field winding losses, the generator has a better efficiency.
 	\item PM generators usually have higher torque densities.
 \end{itemize}
 
-However, the drawbacks of the permanent magnet generators can be listed as;
+However, the drawbacks of the permanent magnet generators can be listed as:
 
 \begin{itemize}
-	\item Difficult to assembly (for iron-cored machines).
-	\item High permanent-magnet prices increase the cost of the generator.
+	\item Iron-cored DDPMGs are difficult to assembly due to attraction force between rotor and stator.
+	\item Increased cost due to high price of rare-earth permanent magnets.
 	\item Risk of demagnetization of magnets during short-circuit faults.
 	\item No control over the induced voltage magnitude.
 \end{itemize}
 
-One big drawback of permanent magnet generators is the high cost of rare-earth magnets, which has increased more than tenfold between 2009 and 2011 due to export and mining regulations introduced by China  \cite{rareearthelements}. In Figure \ref{neodymium_price} the price variation of Neodymium Oxide is presented. Although, it is now much cheaper than the peak in 2011, the prices are still volatile and it is still four times more expensive compared to five years ago. It is stated in \cite{Moss2011} that the future DDPMGs are in risk due to high demand of rare-earth metals  and supply chain problems due to political risk.  
+The biggest drawback of permanent magnet generators is the high cost of rare-earth magnets, which has increased more than tenfold between 2009 and 2011 due to export and mining regulations introduced by China  \cite{rareearthelements}. In Figure \ref{neodymium_price}, the price variation of Neodymium Oxide is presented. Although the prices of permanent magnets came down after the peak in 2011, they are still volatile and still four times more expensive compared to five years ago. It is stated in \cite{Moss2011} that the future DDPMGs are in risk due to high demand of rare-earth metals  and supply chain problems due to political risk.  
 
 \begin{figure}[]
 \centering
@@ -255,10 +253,9 @@ One big drawback of permanent magnet generators is the high cost of rare-earth m
 \label{neodymium_price}
 \end{figure}
 
-There are a few permanent magnet topologies that aim to achieve higher torque densities. One of the best candidates is the transverse flux permanent magnet (TFPM) machine. In a TFPM machine the winding space can be increased without decreasing the available space for the main flux \cite{Bang2010}. Thus, the machine can have a short pole pitch which helps to increase the frequency and magnitude of the induced voltage at low rotational speeds. In \cite{Bang2010}, Bang summarized different TFPM machines and evaluated them for direct-drive wind turbine applications. It is stated that, a 5~MW TFPM machine is  25\% lighter than a conventional PMG. In general, TFPM machines have simple windings and higher torque densities. On the other side, the flux path is more complex making the mechanical design and manufacturing more complicated \cite{Bang2009,Bang2008}.
+There are a few permanent magnet topologies that aim to achieve higher torque densities. One of the best candidates is the transverse flux permanent magnet (TFPM) machine. In a TFPM machine the winding space can be increased without decreasing the available space for the main flux \cite{Bang2010}. Thus, the machine can have a short pole pitch which helps to increase the frequency and magnitude of the induced voltage at low rotational speeds. In \cite{Bang2010}, different TFPM machine topologies are summarised. It is stated that, a 5~MW TFPM machine is  25\% lighter than a conventional PMG. In general, TFPM machines have simple windings and higher torque densities. On the other side, the flux path is more complex making the mechanical design and manufacturing more complicated \cite{Bang2008,Bang2009}.
 
 \section{Hydraulic Power Take-off Systems}
-
 
 There are two main concepts that use hydraulic components in wind turbines as presented in Figure~\ref{hydraulics}. In the first configuration, a gearbox is used to increase the rotational speed. The output speed of the hydraulic transmission is controlled so that the generator always rotates at the synchronous speed (i.e. 1500~rpm for a 4-pole machine connected to 50 Hz grid). In the second configuration, there is no mechanical gearbox and the hydraulic pump is directly coupled to the turbine. The hydraulic pump is coupled to a hydraulic motor that drives a synchronous generator at constant speed.
 
