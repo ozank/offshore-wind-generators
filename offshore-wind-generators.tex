@@ -257,7 +257,7 @@ There are a few permanent magnet topologies that aim to achieve higher torque de
 
 \section{Hydraulic Power Take-off Systems}
 
-There are two main concepts that use hydraulic components in wind turbines as presented in Figure~\ref{hydraulics}. In the first configuration, a gearbox is used to increase the rotational speed. The output speed of the hydraulic transmission is controlled so that the generator always rotates at the synchronous speed (i.e. 1500~rpm for a 4-pole machine connected to 50 Hz grid). In the second configuration, there is no mechanical gearbox and the hydraulic pump is directly coupled to the turbine. The hydraulic pump is coupled to a hydraulic motor that drives a synchronous generator at constant speed.
+Hydraulic transmission systems are proposed to drive the generator at synchronous speed (i.e. 1500~rpm for a 4-pole machine connected to 50 Hz grid) regardless of the wind turbine speed. Thus, the generator can be directly connected to the grid eliminating any power electronics. There are two main concepts as presented in Figure~\ref{hydraulics}. In the first configuration, a gearbox is used to couple the hydraulic transmission system, where in the second configuration, there is no mechanical gearbox and the hydraulic pump is directly coupled to the turbine. The output speed of the hydraulic transmission is controlled to keep the generator speed constant.
 
   \begin{figure}
     \centering
@@ -268,7 +268,7 @@ There are two main concepts that use hydraulic components in wind turbines as pr
     \label{hydraulics}
   \end{figure}
 
-Dewind uses the first configuration in a 2~MW wind turbine, which is presented in Figure \ref{voith}. A conventional synchronous generator is directly connected to the medium-voltage grid without intermediate electrical stages such as power electronics and step-up transformer. The absence of power electronics and transformer means reduced mass and increased reliability.
+Voith Turbo designed a 2~MW wind turbine hydraulic transmission system, which is presented in Figure \ref{voith}. A conventional synchronous generator is directly connected to the medium-voltage grid without intermediate electrical stages such as power electronics and step-up transformer. The absence of power electronics and transformer means reduced cost and increased reliability.
 
   \begin{figure}
     \centering
@@ -278,9 +278,9 @@ Dewind uses the first configuration in a 2~MW wind turbine, which is presented i
     \label{voith}
   \end{figure}
 
-Artemis Intelligent Power proposed to use a hydraulic transmission system controlled by digital switches. Digital control ensures fast response and efficient operation. Artemis Intelligent Power is currently designing a 7~MW hydraulic power take-off system. The configuration has a digital displacement pump and two hydraulic motors connected to two synchronous generators. Two generator configuration introduces redundancy in the system. Thus, even if one of the generators fails the other one can continue to generate power at part-load until the next maintenance. Furthermore, at partial loads one of the sets can be idled to increase the overall efficiency.
+Artemis Intelligent Power designed a digital controlled hydraulic transmission system, which ensures fast response and efficient operation. Artemis Intelligent Power is designing a 7~MW hydraulic power take-off system, which has a digital displacement pump that drives two independent hydraulic motors and two synchronous generators. Double generator configuration introduces redundancy in the system. Thus, even if one of the generators fails the other one can continue to operate until the next maintenance. Furthermore, at partial loads one of the sets can be idled to increase the overall efficiency.
 
-The weak point of a hydraulic system is the fault ride through capabilities. Since there are no intermediate stages between generator and grid, in case of a grid-fault the control loop of the hydraulic system may not be fast enough to respond within grid requirements. Mechanical control systems may not be fast enough. However, Artemis Intelligent Power's electronically controlled hydraulic valves decrease the reaction time of the system. In \cite{artemis}, it is claimed that control bandwidths up to 20~Hz are achievable.
+The weak point of a hydraulic system is the fault ride through capabilities. Since there are no intermediate stages between generator and grid, in case of a grid-fault the control loop of the hydraulic system should be fast enough to respond within grid requirements. Although, mechanical control systems may not be fast enough, Artemis Intelligent Power's electronically controlled hydraulic valves decrease the reaction time of the system. In \cite{artemis}, it is claimed that a control bandwidth up to 20~Hz is achievable.
 
 \section{Generators with Single Stage Gearbox}
 
