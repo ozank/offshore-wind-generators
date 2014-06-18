@@ -54,7 +54,7 @@
 %	TITLE
 %----------------------------------------------------------------------------------------
 
-\title{\textbf{Electrical Generator Technologies for Offshore Wind Turbines}} % Subtitle
+\title{\textbf{Future Electrical Generator Technologies for Offshore Wind Turbines}} % Subtitle
 
 \author{\textsc{Ozan Keysan} % Author
 \\{\textit{Institute for Energy  Systems\\ University of Edinburgh, UK}}} % Institution
@@ -80,7 +80,7 @@ In this chapter different electric generator topologies for offshore wind turbin
 
 \section*{Introduction}
 
-The mechanical energy captured by the turbine blades are converted to electrical energy and is fed into the grid with a series of components such as; gearbox, generator, power electronics, transformer and transmission. Generator is the most important component in the power take-off system and there are many different generator types that can be used in turbines depending on the size, operating conditions, and speed range. Some generator types used in commercial wind turbines are presented in Table \ref{generator_manufacturers}. 
+Mechanical energy captured by the blades are converted to electrical energy by a series of components such as; gearbox, generator, power electronics, step-up transformer. Generator is the most important component in the power take-off system and there are many different generator topologies depending on the size if the turbine, operating conditions, and speed range. Some generator types used in commercial wind turbines are presented in Table \ref{generator_manufacturers}. 
 
 There is a trend toward higher power-rated turbines, which help to reduce the installation and maintenance costs per kilo-watt-hour \cite{Bang2008}. The power rating of the turbines increased by 100 times since 1985 and this trend seems to continue. The onshore wind energy market is considered to be quite mature and the power rating is not expected to go beyond the present 3--3.6 MW size due to transportation limitations. 
 However, large offshore wind turbines can be assembled in port and transported in one piece.
@@ -107,6 +107,7 @@ The advantages and disadvantages of some generator systems have been tabulated i
   \begin{tabular}{clrrlc}
 	  
 	  Drive Train & Generator & Power & Rotor & Rated & Manufacturer \\
+	   & Type & Rating & Diameter & Speed & \\
 	  \hline
 		& DFIG & 2 MW & 90 m & 20.7 rpm & DeWind \\
 		& DFIG & 2 MW & 90 m & 19 rpm & Gamesa \\
@@ -151,7 +152,7 @@ The advantages and disadvantages of some generator systems have been tabulated i
     Cost & $\star\star$ & $\star\star\star$ & $$\star\star\star$ & $\star\star$ & $\star$ & $\star$ \\
     \hline
    \end{tabular}
-  \caption{Comparison of different power take-off systems.}
+  \caption{Comparison of different power take-off systems (\star represents preferred aspects).}
   \label{generator_comparison}
 \end{table}
 
@@ -173,7 +174,7 @@ In Figure \ref{repower} one of the largest DFIG wind turbines(6~MW) are presente
   \end{figure}
 
 Doubly-fed induction generator is a special type of induction machine. DFIGs differ from squirrel-cage induction generators as they need wound-rotor and electrical brushes. The frequency of the armature voltage is controlled by the field winding. Armature winding of the doubly-fed induction generator is directly connected to the grid. Therefore, DFIGs do not require full-rating power electronics, which is the main advantage of this generator type. The rating of the converter is about 25--30\% of the generator capacity, which reduces the overall cost \cite{Li2008a}.
-The advantages of the DFIG system can be listed as;
+The advantages of the DFIG system compared to direct-drive power take-off systems can be listed as;
 
 \begin{itemize}
 	\item Partially rated power electronics reduces the cost.
@@ -181,7 +182,7 @@ The advantages of the DFIG system can be listed as;
 	\item Off-the-shelf components, wide range of generator options.
 \end{itemize}
 
-However, DFIGs also have a few disadvantages \cite{Li2008a}:
+However, DFIGs also have a few disadvantages compared to direct-drive systems \cite{Li2008a}:
 
 \begin{itemize}
 	\item A multi-stage gearbox is necessary which may cause reliability issues.
@@ -201,7 +202,7 @@ However, DFIGs also have a few disadvantages \cite{Li2008a}:
 
 \section{Direct Drive}
 
-In direct-drive systems, the generator is directly connected to the turbine, therefore the generator speed is very low (usually in the range of 10--20~rpm) and the torque requirements are very high, which results in very large and heavy generators. The large diameter of direct-drive generators increases the support structure mass. Furthermore, the airgap clearance in direct-drive generators are bigger than conventional generators due to manufacturing tolerances.
+In direct-drive systems, the generator is directly connected to the turbine, therefore the generator speed is very low (usually in the range of 10--20~rpm) and the torque requirements are very high, which results in very large and heavy generators. The large diameter of direct-drive generators increases the support structure mass. Furthermore, the air-gap clearance in direct-drive generators are bigger than conventional generators due to manufacturing tolerances.
 
 The advantages of direct drive generators are simplified drive train and higher efficiency (especially at partial loads) \cite{Li2008a}. The absence of gearbox reduces the maintenance requirements and increases the reliability. Two types of generators are generally used in direct-drive power take-off systems: electrically excited synchronous generators and permanent magnet generators. 
 
@@ -270,7 +271,7 @@ However, the drawbacks of the permanent magnet generators can be listed as:
 	\item No control over the induced voltage magnitude.
 \end{itemize}
 
-The biggest drawback of permanent magnet generators is the high cost of rare-earth magnets, which has increased more than tenfold between 2009 and 2011 due to export and mining regulations introduced by China  \cite{rareearthelements}. In Figure \ref{neodymium_price}, the price variation of Neodymium Oxide is presented. Although the prices of permanent magnets came down after the peak in 2011, they are still volatile and still four times more expensive compared to five years ago. It is stated in \cite{Moss2011} that the future DDPMGs are in risk due to high demand of rare-earth metals  and supply chain problems due to political risk.  
+The biggest drawback of permanent magnet generators is the high cost of rare-earth magnets, which increased more than tenfold between 2009 and 2011 due to export and mining regulations introduced by China  \cite{rareearthelements}. In Figure \ref{neodymium_price}, the price variation of Neodymium Oxide is presented. Although the prices of permanent magnets came down after the peak in 2011, they are still volatile and still four times more expensive compared to five years ago. It is stated in \cite{Moss2011} that the future DDPMGs are in risk due to high demand of rare-earth metals  and supply chain problems due to political risk.  
 
 \begin{figure}[]
 \centering
@@ -298,7 +299,7 @@ Thus, by accepting a small risk on the gearbox side high mass and high cost of t
   \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{multibrid}
-    \caption{Areva 5 MW Multibrid wind tutbine with combined gearbox and geratator (Courtesy of Areva).} 
+    \caption{Areva 5 MW Multibrid wind turbine with combined gearbox and generator (Courtesy of Areva).} 
     \label{multibrid}
   \end{figure}
 
@@ -325,7 +326,7 @@ Voith Turbo designed a 2~MW wind turbine hydraulic transmission system, which is
     \centering
     \includegraphics[height=1.2in]{voith_windrive}
     \includegraphics[height=1.2in]{voith_schematic}
-    \caption{Windrive 2~MW power take-off system with hydraulic transmission (Courtesy of Voith Turbo).} 
+    \caption{Hydraulic power take-off system with hydraulic transmission. a) Windrive 2~MW system, b)Schematic of Windrive (Courtesy of Voith Turbo).} 
     \label{voith}
   \end{figure}
 
@@ -348,7 +349,7 @@ ChapDrive is developing a 5 MW hydraulic power take-off system for offshore wind
 
 \subsection{Ironless Permanent-Magnet Generators}
 
-Electrical steel laminations are used in the stator and rotor core of conventional permanent magnet generators. The electrical steel has a low magnetic reluctance, however, the assembly and repair of an iron cored permanent magnet generator is very difficult due to high magnetic attraction forces between rotor and stator. Furthermore, a heavier support structure is required to keep the airgap clearance constant and non-balanced forces reduce the lifespan of the generator bearings. These forces can be eliminated with an air cored stator winding design \cite{Mueller2009}. The elimination of these forces reduces the structural mass considerably as described in \cite{McDonald2008b}. Also, the machine can be assembled and maintained much easier. 
+Electrical steel laminations are used in the stator and rotor core of conventional permanent magnet generators. The electrical steel has a low magnetic reluctance, however, the assembly and repair of an iron cored permanent magnet generator is very difficult due to high magnetic attraction forces between rotor and stator. Furthermore, a heavier support structure is required to keep the air-gap clearance constant and non-balanced forces reduce the lifespan of the generator bearings. These forces can be eliminated with an air cored stator winding design \cite{Mueller2009}. The elimination of these forces reduces the structural mass considerably as described in \cite{McDonald2008b}. Also, the machine can be assembled and maintained much easier. 
 
   \begin{figure}[t]
     \centering
@@ -393,12 +394,12 @@ The magnetic gears are contactless, lubricant-free and have no friction. Thus, m
   \end{figure}
 
 
-Magnomatics, which is the leading company in magnetic transmission systems, designed magnetic gears for electric car motors and ship propulsion systems. They are also planning to manufacture pseudo direct-drive systems for wind turbines.
+Magnomatics, which is a leading company in magnetic transmission systems, designed magnetic gears for electric car motors and ship propulsion systems. They are also planning to manufacture pseudo direct-drive systems for wind turbines.
 
 \subsection{Superconducting Generators}
 
 Superconducting electrical machines have drawn interest since the discovery of the first superconductors in 1911, but it was after the discovery of high-temperature superconductors that the research on the applications of superconductivity has been boosted. Superconducting machines operate at higher air-gap flux densities due to the higher MMF created by superconducting wires that can conduct 100 A/mm\textsuperscript{2} compared to 5--6 A/mm\textsuperscript{2} of a copper coil. Thus, they have higher power densities than conventional
-electrical machines and reduce the size significantly. In \cite{Klaus2006}, it is proposed that HTS machine can reduce the mass and volume by 40--50\%. In Figure~\ref{amsc_36mw}, the size and mass comparisons between superconducting machines and conventional motors are presented. In Figure~\ref{amsc_36mw}, a 36.5 MW superconducting ship propulsion motor is compared with a conventional motor. The superconducting motor delivers 50\% more power in less than half of the mass of the conventional generator.
+electrical machines and reduce the size significantly. In \cite{Klaus2006}, it is proposed that HTS machine can reduce the mass and volume by 40--50\% including the cryocooler system. In Figure~\ref{amsc_36mw}, the size and mass comparisons between superconducting machines and conventional motors are presented. In Figure~\ref{amsc_36mw}, a 36.5 MW superconducting ship propulsion motor is compared with a conventional motor. The superconducting motor delivers 50\% more power in less than half of the mass of the conventional generator.
 
 \begin{figure}[t]
     \centering
@@ -426,7 +427,7 @@ electrical machines and reduce the size significantly. In \cite{Klaus2006}, it i
 Data from direct-drive systems have been collected to compare mass to torque ratio of HTS machines with other type of generators. The result is presented in Figure~\ref{generator_mass_compare}. The data for each generator can be found in \cite{Keysan2011b}. The dashed line represents ratio of generator mass to torque for permanent-magnet machines which is estimated as 25 kg/kNm by Bang et al. in \cite{Bang2008}. The continuous line represents the linear trend line estimated using the HTS machines in the graph). It can be seen from the graph that HTS machines are generally lighter than PM generators for applications with torque requirements larger than 3000 kNm. 
 
 
-The most common superconducting machine type is a hybrid superconducting synchronous machine, which is a synchronous machine with a superconducting dc-field winding \cite{Kalsi2004a,Gieras2008a}.  This type of superconducting machines have high power density, but require cryogenic couplers and field excitation brushes in the rotor structure, which causes reliability problems. 
+The most common superconducting machine type is a hybrid superconducting synchronous machine, which is a synchronous machine with a superconducting dc-field winding \cite{Kalsi2013,Gieras2008a}.  This type of superconducting machines have high power density, but require cryogenic couplers and field excitation brushes in the rotor structure, which causes reliability problems. 
 
 There are some companies interested in superconducting wind turbines. Converteam -now acquired by General Electric- proposed an 8 MW, 12~rpm superconducting generator, which will be 5 m in diameter and weights approximately 100 tonnes \cite{Lewis2007}. American Superconductor (AMSC) aims to manufacture a 10 MW direct-drive superconducting generator: SeaTitan, which will have an outer diameter of 4.5-5 m and weights 150 tonnes \cite{Snitchler2011}.
 
@@ -438,11 +439,17 @@ The high efficiency of superconducting machines has been emphasized in the first
 
 \begin{itemize}
 	\item No cryogenic coupler, more robust and cheap cooling system
-	\item No cryogenic coupler, more robust and cheap cooling system
-	\item No brushes or complex excitation systems
+	\item No brushes or complex excitation system
 	\item No centrifugal forces and transient torques that can damage the superconducting material
 \end{itemize}
 
+\section{Conclusion}
+
+In this chapter, different electrical generator technologies for offshore wind turbines are reviewed. Doubly-fed induction generators are the most common generator type for multi-megawatt offshore turbines. DFIGs are off-the shelf and reliable generators, and they have the advantage of using a partial-rated power electronics system, which reduces the overall cost. However, the gearboxes used with DFIGs have reliability problems and require regular maintenance. 
+
+Direct drive generator systems, especially permanent-magnet direct drive systems, became more popular due to minimum number of moving parts and increased reliability. However, the increasing cost of rare-earth permanent magnets makes the initial cost of the direct-drive systems more expensive compared to geared systems. It is argued that reduced maintenance cost will make them economically more viable.
+
+There are also novel generator technologies, which are not proven yet in the full scale. These include hydraulic power take-off systems, generators with magnetic gearboxes, superconducting generators. These technologies aim to solve reliability and high mass problems of existing technologies, but it is considered that it will take several years until these technologies penetrate into the offshore renewable energy market. 
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
